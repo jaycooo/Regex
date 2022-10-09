@@ -5,7 +5,7 @@ The purpose of this tutorial is to explain what regex(regular expressions) are a
 ## Summary
 
 The code listed below will allow the verification of a user by the user name 
-Matching username /^([a-z0-9_\.-]+)([\da-z\.-]+)
+Matching username /^([a-z0-9_\.-])([\da-z\.-])$/
 
 ## Table of Contents
 
@@ -23,28 +23,44 @@ Matching username /^([a-z0-9_\.-]+)([\da-z\.-]+)
 
 ## Regex Components
 
-### Anchors
+Anchors
+ The starts and ends the regualar expression with specific criteria 
 
-### Quantifiers
+Quantifiers
+This will be used to count how many times a specific character needs to match 
 
-### OR Operator
+OR operator
+This can be used to match characters or expression of either the left or the right 
+/^([a-z0-9_\.-])([\da-z\.-])$/
 
-### Character Classes
+Character Classes
+These are a set of characters enclosed within a square bracket it specifies that the characters will match a single character from an input string
+\d
 
-### Flags
+Flags
+An expression that consists of pattern and optional flags. Without flags and special symbols the search by a regex expression would be the same as a substring search
 
-### Grouping and Capturing
+Grouping and Capturing
+This is a way to group and treat multiple characters as a single unit. They are created by placing the characters grouped inside a set of parentheses
+([a-z0-9_\.-])
 
-### Bracket Expressions
+Bracket Expression
+This matches the specific set of characters and may match collating elements 
+([a-z0-9_\.-])
 
-### Greedy and Lazy Match
+Greedy and lazy match
+This expression meand they match as much as they can and only give back when necessary to match the remainder of the regex
 
-### Boundaries
+Boundaries
+This is the postion between \w and \W at the begining or end of a string it functions similar to the dollars sign by creating a boundary
 
-### Back-references
+Back References
+Are regular expression commands which refer to a previous part of the matched regualr expression
 
-### Look-ahead and Look-behind
+Look Ahead and Look Behind
+This is to look ahead or behind to match a certain order 
 
-## Author
+Author Julia Coronado 
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This was created by Julia Coronado contact information below 
+https://github.com/jaycooo/
